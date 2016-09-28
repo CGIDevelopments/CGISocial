@@ -13,6 +13,7 @@
 		03E78E461D9B7FDA0018B3FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E78E451D9B7FDA0018B3FE /* Assets.xcassets */; };
 		03E78E491D9B7FDA0018B3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E78E471D9B7FDA0018B3FE /* LaunchScreen.storyboard */; };
 		03E78E511D9B80180018B3FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03E78E501D9B80180018B3FE /* GoogleService-Info.plist */; };
+		03E78E5A1D9B95760018B3FE /* SignInTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E78E591D9B95760018B3FE /* SignInTextField.swift */; };
 		B9D95A80D83C5B136B2E254C /* Pods_CGISocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C730C17005DE2D644DFB4B /* Pods_CGISocial.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		03E78E481D9B7FDA0018B3FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E78E4A1D9B7FDA0018B3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03E78E501D9B80180018B3FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03E78E591D9B95760018B3FE /* SignInTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTextField.swift; sourceTree = "<group>"; };
 		39C730C17005DE2D644DFB4B /* Pods_CGISocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGISocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF58EEFDDEFB120D42325C83 /* Pods-CGISocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGISocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CGISocial/Pods-CGISocial.debug.xcconfig"; sourceTree = "<group>"; };
 		E88A44461CD4C899E2AE27E0 /* Pods-CGISocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGISocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-CGISocial/Pods-CGISocial.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		03E78E571D9B836E0018B3FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				03E78E591D9B95760018B3FE /* SignInTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E78E411D9B7FDA0018B3FE /* SignInVC.swift in Sources */,
+				03E78E5A1D9B95760018B3FE /* SignInTextField.swift in Sources */,
 				03E78E3F1D9B7FDA0018B3FE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
