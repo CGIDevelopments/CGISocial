@@ -61,6 +61,9 @@
                                     <constraint firstAttribute="width" constant="150" id="riy-1P-kMV"/>
                                 </constraints>
                                 <state key="normal" title="FacebookButton" image="f"/>
+                                <connections>
+                                    <action selector="facebookbuttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWZ-fz-4OE"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bgc-4t-7hu" customClass="SignInTextField" customModule="CGISocial" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
