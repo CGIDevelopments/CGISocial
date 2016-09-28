@@ -39,6 +39,7 @@
 		03E78E691D9BAFEB0018B3FE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		03E78E6A1D9BAFEB0018B3FE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		03E78E6B1D9BAFEB0018B3FE /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		03ED4AB31D9BC4B300D1E446 /* CGISocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CGISocial.entitlements; sourceTree = "<group>"; };
 		39C730C17005DE2D644DFB4B /* Pods_CGISocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CGISocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF58EEFDDEFB120D42325C83 /* Pods-CGISocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGISocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CGISocial/Pods-CGISocial.debug.xcconfig"; sourceTree = "<group>"; };
 		E88A44461CD4C899E2AE27E0 /* Pods-CGISocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CGISocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-CGISocial/Pods-CGISocial.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		03E78E521D9B82D60018B3FE /* Info */ = {
 			isa = PBXGroup;
 			children = (
+				03ED4AB31D9BC4B300D1E446 /* CGISocial.entitlements */,
 				03E78E4A1D9B7FDA0018B3FE /* Info.plist */,
 				03E78E501D9B80180018B3FE /* GoogleService-Info.plist */,
 			);
@@ -208,6 +210,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 458GZWZ2EK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -345,6 +352,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,6 +403,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -425,6 +434,7 @@
 			baseConfigurationReference = DF58EEFDDEFB120D42325C83 /* Pods-CGISocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CGISocial/CGISocial.entitlements;
 				DEVELOPMENT_TEAM = 458GZWZ2EK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,6 +453,7 @@
 			baseConfigurationReference = E88A44461CD4C899E2AE27E0 /* Pods-CGISocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CGISocial/CGISocial.entitlements;
 				DEVELOPMENT_TEAM = 458GZWZ2EK;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
