@@ -13,4 +13,5 @@ target 'CGISocial' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'FBSDKShareKit'
+  pod 'SwiftKeychainWrapper'
 end

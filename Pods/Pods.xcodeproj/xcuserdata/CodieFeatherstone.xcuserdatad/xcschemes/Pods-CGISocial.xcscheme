@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3EFA51A5AA2069E1F865B868FA7F76B3"
+               BlueprintIdentifier = "AB6A8EDA1B5D69FE7F66A5CB30F1DF5D"
                BuildableName = "Pods_CGISocial.framework"
                BlueprintName = "Pods-CGISocial"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3EFA51A5AA2069E1F865B868FA7F76B3"
+            BlueprintIdentifier = "AB6A8EDA1B5D69FE7F66A5CB30F1DF5D"
             BuildableName = "Pods_CGISocial.framework"
             BlueprintName = "Pods-CGISocial"
             ReferencedContainer = "container:Pods.xcodeproj">
