@@ -233,25 +233,25 @@
                                     <constraint firstAttribute="height" constant="80" id="zB9-pK-yn5"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" sectionHeaderHeight="16" sectionFooterHeight="16" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-ff-Hx7" userLabel="PostFeed">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="400" sectionHeaderHeight="16" sectionFooterHeight="16" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-ff-Hx7" userLabel="PostFeed">
                                 <rect key="frame" x="0.0" y="187" width="375" height="480"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" rowHeight="250" id="PxG-Tc-a2C" userLabel="TextPostCell">
-                                        <rect key="frame" x="0.0" y="16" width="375" height="250"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="TextPostCell" rowHeight="251" id="PxG-Tc-a2C" userLabel="TextPostCell" customClass="TextPostCell" customModule="CGISocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="16" width="375" height="251"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PxG-Tc-a2C" id="Wkh-Sw-fRu" userLabel="TextPostContentView">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e42-vc-ACZ" userLabel="CellView" customClass="ShadowView" customModule="CGISocial" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="233"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="235"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-Lj-K96" userLabel="OverSV">
-                                                            <rect key="frame" x="8" y="8" width="327" height="190"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="192.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D5Q-3b-LNp" userLabel="TopSV">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
@@ -266,7 +266,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-za-6pW">
                                                                             <rect key="frame" x="68" y="0.0" width="191" height="60"/>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
-                                                                            <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="textColor" red="0.45882352939999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="FyB-NW-vdd">
@@ -279,7 +279,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="What would you like to say?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-sP-Un8" userLabel="PostTextTV" customClass="PostTextView" customModule="CGISocial" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="122"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="124.5"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                     <textInputTraits key="textInputTraits"/>
@@ -294,52 +294,40 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VNX-VB-RzN" userLabel="LikesSV">
-                                                            <rect key="frame" x="240" y="205.5" width="95" height="19.5"/>
+                                                            <rect key="frame" x="240" y="208.5" width="95" height="19.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXM-0e-zhf">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXM-0e-zhf">
                                                                     <rect key="frame" x="0.0" y="0.0" width="33" height="19.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="RyT-vs-pgg"/>
                                                                     </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="Likes">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="14" name="AvenirNext-Medium"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C42-d7-UAW">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="888,888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C42-d7-UAW">
                                                                     <rect key="frame" x="41" y="0.0" width="54" height="19.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="jrM-pq-wB1"/>
                                                                     </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="888,888">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="14" name="AvenirNext-Medium"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="95" id="vk2-pb-Itl"/>
+                                                                <constraint firstAttribute="width" constant="95" id="8BX-8J-o33"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="VNX-VB-RzN" firstAttribute="top" secondItem="qR6-Lj-K96" secondAttribute="bottom" constant="8" id="HJa-7n-cd5"/>
-                                                        <constraint firstAttribute="bottom" secondItem="VNX-VB-RzN" secondAttribute="bottom" constant="8" id="Qsb-uQ-Xeu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VNX-VB-RzN" secondAttribute="bottom" constant="7" id="ECd-WR-nxX"/>
                                                         <constraint firstItem="qR6-Lj-K96" firstAttribute="top" secondItem="e42-vc-ACZ" secondAttribute="top" constant="8" id="c6q-oI-aFe"/>
                                                         <constraint firstAttribute="trailing" secondItem="qR6-Lj-K96" secondAttribute="trailing" constant="8" id="cAG-Ey-zeg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VNX-VB-RzN" secondAttribute="trailing" constant="8" id="evr-Em-hzc"/>
                                                         <constraint firstItem="qR6-Lj-K96" firstAttribute="leading" secondItem="e42-vc-ACZ" secondAttribute="leading" constant="8" id="h3M-ci-5YU"/>
-                                                        <constraint firstAttribute="trailing" secondItem="VNX-VB-RzN" secondAttribute="trailing" constant="8" id="qv1-Zw-MDS"/>
+                                                        <constraint firstItem="VNX-VB-RzN" firstAttribute="top" secondItem="qR6-Lj-K96" secondAttribute="bottom" constant="8" id="lHs-7w-wHa"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -352,19 +340,27 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="likeIV" destination="FyB-NW-vdd" id="OHn-8E-kdX"/>
+                                            <outlet property="likesL" destination="lXM-0e-zhf" id="ANL-9x-pm6"/>
+                                            <outlet property="likesNumberL" destination="C42-d7-UAW" id="9Wq-B7-CfZ"/>
+                                            <outlet property="postTextTV" destination="xyc-sP-Un8" id="whE-zz-pWg"/>
+                                            <outlet property="profileIV" destination="y4S-1x-aHk" id="Wud-A5-gQY"/>
+                                            <outlet property="usernameL" destination="8rS-za-6pW" id="GM6-TT-dVW"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" id="5Ti-0Y-77T" userLabel="ImagePostCell">
-                                        <rect key="frame" x="0.0" y="266" width="375" height="400"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="ImagePostCell" id="5Ti-0Y-77T" userLabel="ImagePostCell" customClass="ImagePostCell" customModule="CGISocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="267" width="375" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Ti-0Y-77T" id="8dt-24-T2t" userLabel="TextPostContentView">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgX-Kc-ZmQ" userLabel="CellView" customClass="ShadowView" customModule="CGISocial" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="383.5"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="384"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tlb-aC-R79" userLabel="OverSV">
-                                                            <rect key="frame" x="8" y="8" width="327" height="339.5"/>
+                                                            <rect key="frame" x="8" y="8" width="327" height="340"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UX1-O1-oY0" userLabel="TopSV">
                                                                     <rect key="frame" x="0.0" y="0.0" width="327" height="60"/>
@@ -379,7 +375,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IqA-zU-Ara">
                                                                             <rect key="frame" x="68" y="0.0" width="191" height="60"/>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
-                                                                            <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="vHR-lD-3Vd">
@@ -392,7 +388,7 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mIr-LC-5Ok" userLabel="PostInfo">
-                                                                    <rect key="frame" x="0.0" y="68" width="327" height="271.5"/>
+                                                                    <rect key="frame" x="0.0" y="68" width="327" height="272"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1Q-uF-XFj" userLabel="PostIV" customClass="ShadowIV" customModule="CGISocial" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
@@ -401,7 +397,7 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" text="What would you like to say?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ol7-XN-1Dl" userLabel="PostTextTV" customClass="PostTextView" customModule="CGISocial" customModuleProvider="target">
-                                                                            <rect key="frame" x="0.0" y="208" width="327" height="63.5"/>
+                                                                            <rect key="frame" x="0.0" y="208" width="327" height="64"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <textInputTraits key="textInputTraits"/>
@@ -418,36 +414,24 @@
                                                             </constraints>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Vq-eS-uCS" userLabel="LikesSV">
-                                                            <rect key="frame" x="240" y="355.5" width="95" height="20"/>
+                                                            <rect key="frame" x="240" y="356" width="95" height="20"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJG-vd-BfW">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJG-vd-BfW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="IqO-eu-VxD"/>
                                                                     </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="Likes">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="14" name="AvenirNext-Medium"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4az-Jn-rFA">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="888,888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4az-Jn-rFA">
                                                                     <rect key="frame" x="41" y="0.0" width="54" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="ayY-oL-Vx6"/>
                                                                     </constraints>
-                                                                    <attributedString key="attributedText">
-                                                                        <fragment content="888,888">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="14" name="AvenirNext-Medium"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                    </attributedString>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -476,6 +460,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="likeIV" destination="vHR-lD-3Vd" id="Edf-mN-kBT"/>
+                                            <outlet property="likesL" destination="iJG-vd-BfW" id="gbG-CW-Wcw"/>
+                                            <outlet property="likesNumberL" destination="4az-Jn-rFA" id="VSL-V6-H51"/>
+                                            <outlet property="postImageIV" destination="I1Q-uF-XFj" id="Lcr-rx-H4o"/>
+                                            <outlet property="postTextTV" destination="Ol7-XN-1Dl" id="fGG-VM-wzd"/>
+                                            <outlet property="profileIV" destination="4BE-sC-nHV" id="7kY-5n-bW0"/>
+                                            <outlet property="usernameL" destination="IqA-zU-Ara" id="HLK-KK-U6O"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -495,6 +488,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="postFeedTV" destination="cUe-ff-Hx7" id="r6R-f9-WgG"/>
                         <segue destination="sbX-Vb-xeS" kind="show" identifier="feedToSettings" id="u0m-KB-iHc"/>
                     </connections>
                 </viewController>
