@@ -13,6 +13,7 @@
 		038F365F1DAD2C6500A7E27D /* CircleIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F365E1DAD2C6500A7E27D /* CircleIV.swift */; };
 		038F36611DAD2FCF00A7E27D /* ImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F36601DAD2FCF00A7E27D /* ImagePostCell.swift */; };
 		038F36631DAD2FE900A7E27D /* TextPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F36621DAD2FE900A7E27D /* TextPostCell.swift */; };
+		03E6B2291DC0CE0B00261CB3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B2281DC0CE0B00261CB3 /* DataService.swift */; };
 		03E78E3F1D9B7FDA0018B3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E78E3E1D9B7FDA0018B3FE /* AppDelegate.swift */; };
 		03E78E411D9B7FDA0018B3FE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E78E401D9B7FDA0018B3FE /* SignInVC.swift */; };
 		03E78E441D9B7FDA0018B3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E78E421D9B7FDA0018B3FE /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		038F365E1DAD2C6500A7E27D /* CircleIV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIV.swift; sourceTree = "<group>"; };
 		038F36601DAD2FCF00A7E27D /* ImagePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePostCell.swift; sourceTree = "<group>"; };
 		038F36621DAD2FE900A7E27D /* TextPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPostCell.swift; sourceTree = "<group>"; };
+		03E6B2281DC0CE0B00261CB3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		03E78E3B1D9B7FDA0018B3FE /* CGISocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGISocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E78E3E1D9B7FDA0018B3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E78E401D9B7FDA0018B3FE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03E6B2271DC0CDD500261CB3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				03E6B2281DC0CE0B00261CB3 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		03E78E321D9B7FD90018B3FE = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		03E78E3D1D9B7FDA0018B3FE /* CGISocial */ = {
 			isa = PBXGroup;
 			children = (
+				03E6B2271DC0CDD500261CB3 /* Services */,
 				03E78E581D9B837C0018B3FE /* Storyboard */,
 				03E78E571D9B836E0018B3FE /* View */,
 				03E78E561D9B835B0018B3FE /* Model */,
@@ -336,6 +347,7 @@
 				038F36611DAD2FCF00A7E27D /* ImagePostCell.swift in Sources */,
 				038C5F271DA6933000A8F75B /* Constants.swift in Sources */,
 				038F365F1DAD2C6500A7E27D /* CircleIV.swift in Sources */,
+				03E6B2291DC0CE0B00261CB3 /* DataService.swift in Sources */,
 				03FCBAA61DAD16CE005270F9 /* ShadowIV.swift in Sources */,
 				03FCBAA81DAD176A005270F9 /* PostTextView.swift in Sources */,
 				03E78E601D9BA59D0018B3FE /* ShadowView.swift in Sources */,
