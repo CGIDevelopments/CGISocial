@@ -34,7 +34,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "TextPostCell") as! TextPostCell
+        return tableView.dequeueReusableCell(withIdentifier: "ImagePostCell") as! ImagePostCell
     }
     
     

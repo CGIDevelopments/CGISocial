@@ -403,6 +403,12 @@
                                                                             <textInputTraits key="textInputTraits"/>
                                                                         </textView>
                                                                     </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="I1Q-uF-XFj" firstAttribute="leading" secondItem="mIr-LC-5Ok" secondAttribute="leading" id="BjS-MS-doq"/>
+                                                                        <constraint firstItem="Ol7-XN-1Dl" firstAttribute="leading" secondItem="mIr-LC-5Ok" secondAttribute="leading" id="iRM-TV-iN6"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="I1Q-uF-XFj" secondAttribute="trailing" id="ldN-5F-HG6"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Ol7-XN-1Dl" secondAttribute="trailing" id="rTK-Zb-xvB"/>
+                                                                    </constraints>
                                                                 </stackView>
                                                             </subviews>
                                                             <constraints>
@@ -416,7 +422,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0Vq-eS-uCS" userLabel="LikesSV">
                                                             <rect key="frame" x="240" y="356" width="95" height="20"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJG-vd-BfW">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJG-vd-BfW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="33" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="IqO-eu-VxD"/>
@@ -425,7 +431,7 @@
                                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="888,888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4az-Jn-rFA">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="888,888" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4az-Jn-rFA">
                                                                     <rect key="frame" x="41" y="0.0" width="54" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="ayY-oL-Vx6"/>
