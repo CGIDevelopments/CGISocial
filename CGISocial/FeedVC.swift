@@ -30,11 +30,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "ImagePostCell") as! ImagePostCell
+        if indexPath.row == 0 {
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "ImagePostCell") as! ImagePostCell
+            //set the data here
+            return cell
+        }
+        else {
+            let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "TextPostCell") as! TextPostCell
+            //set the data here
+            return cell
+        }
     }
     
     
