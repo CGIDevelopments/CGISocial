@@ -12,10 +12,8 @@
 		038C5F2B1DA7CD9300A8F75B /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C5F2A1DA7CD9300A8F75B /* SettingsVC.swift */; };
 		038F365F1DAD2C6500A7E27D /* CircleIV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F365E1DAD2C6500A7E27D /* CircleIV.swift */; };
 		038F36611DAD2FCF00A7E27D /* ImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F36601DAD2FCF00A7E27D /* ImagePostCell.swift */; };
-		038F36631DAD2FE900A7E27D /* TextPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F36621DAD2FE900A7E27D /* TextPostCell.swift */; };
 		03E6B2291DC0CE0B00261CB3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B2281DC0CE0B00261CB3 /* DataService.swift */; };
 		03E6B22B1DC248F200261CB3 /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B22A1DC248F200261CB3 /* ImagePost.swift */; };
-		03E6B22D1DC2490500261CB3 /* TextPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E6B22C1DC2490500261CB3 /* TextPost.swift */; };
 		03E78E3F1D9B7FDA0018B3FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E78E3E1D9B7FDA0018B3FE /* AppDelegate.swift */; };
 		03E78E411D9B7FDA0018B3FE /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E78E401D9B7FDA0018B3FE /* SignInVC.swift */; };
 		03E78E441D9B7FDA0018B3FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E78E421D9B7FDA0018B3FE /* Main.storyboard */; };
@@ -40,10 +38,8 @@
 		038C5F2A1DA7CD9300A8F75B /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		038F365E1DAD2C6500A7E27D /* CircleIV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIV.swift; sourceTree = "<group>"; };
 		038F36601DAD2FCF00A7E27D /* ImagePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePostCell.swift; sourceTree = "<group>"; };
-		038F36621DAD2FE900A7E27D /* TextPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPostCell.swift; sourceTree = "<group>"; };
 		03E6B2281DC0CE0B00261CB3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		03E6B22A1DC248F200261CB3 /* ImagePost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
-		03E6B22C1DC2490500261CB3 /* TextPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextPost.swift; sourceTree = "<group>"; };
 		03E78E3B1D9B7FDA0018B3FE /* CGISocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGISocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E78E3E1D9B7FDA0018B3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E78E401D9B7FDA0018B3FE /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				03E6B22A1DC248F200261CB3 /* ImagePost.swift */,
-				03E6B22C1DC2490500261CB3 /* TextPost.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,7 +175,6 @@
 				03FCBAA71DAD176A005270F9 /* PostTextView.swift */,
 				038F365E1DAD2C6500A7E27D /* CircleIV.swift */,
 				038F36601DAD2FCF00A7E27D /* ImagePostCell.swift */,
-				038F36621DAD2FE900A7E27D /* TextPostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,7 +338,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				038F36631DAD2FE900A7E27D /* TextPostCell.swift in Sources */,
 				03E78E5E1D9BA3960018B3FE /* RoundButton.swift in Sources */,
 				03E78E411D9B7FDA0018B3FE /* SignInVC.swift in Sources */,
 				03E6B22B1DC248F200261CB3 /* ImagePost.swift in Sources */,
@@ -354,7 +347,6 @@
 				038F36611DAD2FCF00A7E27D /* ImagePostCell.swift in Sources */,
 				038C5F271DA6933000A8F75B /* Constants.swift in Sources */,
 				038F365F1DAD2C6500A7E27D /* CircleIV.swift in Sources */,
-				03E6B22D1DC2490500261CB3 /* TextPost.swift in Sources */,
 				03E6B2291DC0CE0B00261CB3 /* DataService.swift in Sources */,
 				03FCBAA61DAD16CE005270F9 /* ShadowIV.swift in Sources */,
 				03FCBAA81DAD176A005270F9 /* PostTextView.swift in Sources */,

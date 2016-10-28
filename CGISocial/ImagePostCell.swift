@@ -18,10 +18,18 @@ class ImagePostCell: UITableViewCell {
     @IBOutlet weak var likesNumberL: UILabel!
     @IBOutlet weak var likesL: UILabel!
     
+    var imagePost: ImagePost!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func configureCell(imagePost: ImagePost) {
+        self.imagePost = imagePost
+        self.postTextTV.text = imagePost.caption
+        self.likesNumberL.text = "\(imagePost.likes)"
+        
     }
 
 }
