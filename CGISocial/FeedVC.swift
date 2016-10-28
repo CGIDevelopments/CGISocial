@@ -10,19 +10,26 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var postFeedTV: UITableView!
+    @IBOutlet weak var imageAdd: ShadowIV!
     
     
     var imagePosts = [ImagePost]()
+    var imagePicker: UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         postFeedTV.delegate = self
         postFeedTV.dataSource = self
+        
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
     
          DataService.ds.REF_IMAGE_POSTS.observe(.value, with: { (snapshot) in
@@ -64,6 +71,20 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageAdd.image = image
+        } else {
+            print("ISAAC: A valid image wasn't selected")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func addImageTapped(_ sender: Any) {
+        present(imagePicker, animated: true, completion: nil)
+    }
     
     @IBAction func settingsButtonTapped(_ sender: AnyObject) {
         performSegue(withIdentifier: "feedToSettings", sender: nil)

@@ -198,13 +198,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hpP-Oh-3FH" userLabel="AddPostStackView">
                                         <rect key="frame" x="8" y="8" width="327" height="64"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="sdQ-ZA-p9Y" userLabel="AddImage" customClass="ShadowIV" customModule="CGISocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="sdQ-ZA-p9Y" userLabel="AddImage" customClass="ShadowIV" customModule="CGISocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                 <color key="backgroundColor" red="0.3803921569" green="0.3803921569" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="eb0-gc-T1a"/>
                                                     <constraint firstAttribute="width" constant="64" id="jdW-Hs-Ef8"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="G4C-kh-c8Z" appends="YES" id="9cF-n2-hBl"/>
+                                                </connections>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What would you like to say? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Ky-Ub-x5K" userLabel="AddCaptionTextView" customClass="PostTextView" customModule="CGISocial" customModuleProvider="target">
                                                 <rect key="frame" x="72" y="0.0" width="183" height="64"/>
@@ -385,11 +389,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="sdQ-ZA-p9Y" id="6ff-kX-Q1H"/>
                         <outlet property="postFeedTV" destination="cUe-ff-Hx7" id="r6R-f9-WgG"/>
                         <segue destination="sbX-Vb-xeS" kind="show" identifier="feedToSettings" id="u0m-KB-iHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEX-pu-cI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G4C-kh-c8Z">
+                    <connections>
+                        <action selector="addImageTapped:" destination="VfE-mI-Jcz" id="5Da-gX-v2v"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="864.79999999999995" y="37.331334332833585"/>
         </scene>
