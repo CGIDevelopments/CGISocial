@@ -10,7 +10,7 @@ import UIKit
 
 class ImagePostCell: UITableViewCell {
     
-    @IBOutlet weak var profileIV: UIImageView!
+    @IBOutlet weak var profileIV: CircleIV!
     @IBOutlet weak var usernameL: UILabel!
     @IBOutlet weak var likeIV: UIImageView!
     @IBOutlet weak var postImageIV: ShadowIV!

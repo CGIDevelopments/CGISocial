@@ -21,6 +21,8 @@ class DataService {
     
     private var _REF_BASE = DB_BASE
     private var _REF_POSTS = DB_BASE.child("posts")
+    private var _REF_IMAGE_POSTS = DB_BASE.child("posts").child("imagePosts")
+    private var _REF_TEXT_POSTS = DB_BASE.child("posts").child("textPosts")
     private var _REF_USERS = DB_BASE.child("users")
     
     
@@ -30,6 +32,14 @@ class DataService {
     
     var REF_POSTS: FIRDatabaseReference {
         return _REF_POSTS
+    }
+    
+    var REF_IMAGE_POSTS: FIRDatabaseReference {
+        return _REF_IMAGE_POSTS
+    }
+    
+    var REF_TEXT_POSTS: FIRDatabaseReference {
+        return _REF_TEXT_POSTS
     }
     
     var REF_USERS: FIRDatabaseReference {
